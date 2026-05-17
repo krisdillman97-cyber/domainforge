@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "session_token": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "device_name": {
+      "type": "string"
+    },
+    "ip_address": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "expired",
+        "revoked"
+      ]
+    },
+    "last_command": {
+      "type": "string"
+    },
+    "last_active": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string"
+    },
+    "command_log": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [],
+  "name": "TermuxSession"
+}
