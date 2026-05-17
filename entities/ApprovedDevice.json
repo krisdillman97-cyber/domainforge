@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "device_name": {
+      "type": "string"
+    },
+    "device_fingerprint": {
+      "type": "string"
+    },
+    "user_agent": {
+      "type": "string"
+    },
+    "ip_address": {
+      "type": "string"
+    },
+    "is_owner_device": {
+      "type": "boolean"
+    },
+    "approved_at": {
+      "type": "string"
+    },
+    "last_seen": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "ApprovedDevice"
+}
