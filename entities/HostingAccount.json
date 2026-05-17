@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "plan_id": {
+      "type": "string"
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "suspended",
+        "cancelled",
+        "pending"
+      ]
+    },
+    "domain_id": {
+      "type": "string"
+    },
+    "primary_domain": {
+      "type": "string"
+    },
+    "storage_used_mb": {
+      "type": "number"
+    },
+    "bandwidth_used_gb": {
+      "type": "number"
+    },
+    "expires_at": {
+      "type": "string"
+    },
+    "auto_renew": {
+      "type": "boolean"
+    },
+    "server_ip": {
+      "type": "string"
+    },
+    "ftp_username": {
+      "type": "string"
+    },
+    "cpanel_url": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "HostingAccount"
+}
