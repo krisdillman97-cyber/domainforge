@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "domain_id": {
+      "type": "string"
+    },
+    "domain_name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "A",
+        "AAAA",
+        "CNAME",
+        "MX",
+        "TXT",
+        "NS",
+        "SRV",
+        "CAA"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "ttl": {
+      "type": "number"
+    },
+    "priority": {
+      "type": "number"
+    }
+  },
+  "required": [],
+  "name": "DnsRecord"
+}
