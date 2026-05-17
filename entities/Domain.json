@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "tld": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "available",
+        "registered",
+        "pending",
+        "expired",
+        "transferred"
+      ]
+    },
+    "owner_id": {
+      "type": "string"
+    },
+    "owner_email": {
+      "type": "string"
+    },
+    "registered_at": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string"
+    },
+    "auto_renew": {
+      "type": "boolean"
+    },
+    "nameservers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "locked": {
+      "type": "boolean"
+    },
+    "privacy_protection": {
+      "type": "boolean"
+    },
+    "price_paid": {
+      "type": "number"
+    },
+    "reseller_ref": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Domain"
+}
