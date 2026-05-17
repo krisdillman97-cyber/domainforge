@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "domain_registration",
+        "domain_renewal",
+        "domain_transfer",
+        "hosting_plan",
+        "ssl_certificate"
+      ]
+    },
+    "item_name": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "paid",
+        "failed",
+        "refunded",
+        "cancelled"
+      ]
+    },
+    "stripe_session_id": {
+      "type": "string"
+    },
+    "stripe_payment_intent": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Order"
+}
