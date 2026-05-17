@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price_monthly": {
+      "type": "number"
+    },
+    "price_yearly": {
+      "type": "number"
+    },
+    "storage_gb": {
+      "type": "number"
+    },
+    "bandwidth_gb": {
+      "type": "number"
+    },
+    "max_domains": {
+      "type": "number"
+    },
+    "ssl_included": {
+      "type": "boolean"
+    },
+    "email_accounts": {
+      "type": "number"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [],
+  "name": "HostingPlan"
+}
